@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>StackedHorizontalProgressBar by nisrulz</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/nisrulz/stackedhorizontalprogressbar">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/nisrulz/stackedhorizontalprogressbar/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/nisrulz/stackedhorizontalprogressbar/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>StackedHorizontalProgressBar</h1>
+          <p>Android Library to implement stacked horizontal  progressbar</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/nisrulz">nisrulz</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="stackedhorizontalprogressbar" class="anchor" href="#stackedhorizontalprogressbar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>StackedHorizontalProgressBar</h1>
+
+<p>This is a result of me trying to find a way to have a progressbar show two values. Hence 
+I created the StackedHorizontalProgressBar as a library project.</p>
+
+<h1>
+<a id="integration" class="anchor" href="#integration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Integration</h1>
+
+<ul>
+<li>StackedHorizontalProgressBar is available in the MavenCentral, so getting it as simple as adding it as a dependency</li>
+</ul>
+
+<div class="highlight highlight-source-groovy-gradle"><pre>compile <span class="pl-s"><span class="pl-pds">'</span>com.github.nisrulz:stackedhorizontalprogressbar:1.0.0<span class="pl-pds">'</span></span></pre></div>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
+
+<ol>
+<li>
+<p>Put the StackedHorizontalProgressBar element in your layout </p>
+
+<div class="highlight highlight-text-xml"><pre>
+ &lt;<span class="pl-ent">in</span>.excogitation.lib.StackedHorizontalProgressBar
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/stackedhorizontalprogressbar<span class="pl-pds">"</span></span>
+        <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>?android:attr/progressBarStyleHorizontal<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_margin</span>=<span class="pl-s"><span class="pl-pds">"</span>5dp<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">progressDrawable</span>=<span class="pl-s"><span class="pl-pds">"</span>@drawable/stacked_horizontal_progress<span class="pl-pds">"</span></span>/&gt;
+</pre></div>
+</li>
+<li>
+<p>Reference in code as below</p>
+
+<div class="highlight highlight-source-java"><pre><span class="pl-k">int</span> primary_pts <span class="pl-k">=</span> <span class="pl-c1">3</span>;
+<span class="pl-k">int</span> secondary_pts <span class="pl-k">=</span><span class="pl-c1">6</span>;
+<span class="pl-k">int</span> max <span class="pl-k">=</span> <span class="pl-c1">10</span>;
+
+<span class="pl-smi">StackedHorizontalProgressBar</span> stackedHorizontalProgressBar;
+stackedHorizontalProgressBar <span class="pl-k">=</span> (<span class="pl-smi">StackedHorizontalProgressBar</span>) findViewById(<span class="pl-smi">R</span><span class="pl-k">.</span>id<span class="pl-k">.</span>stackedhorizontalprogressbar);
+stackedHorizontalProgressBar<span class="pl-k">.</span>setMax(max);
+stackedHorizontalProgressBar<span class="pl-k">.</span>setProgress(primary_pts);
+stackedHorizontalProgressBar<span class="pl-k">.</span>setSecondaryProgress(secondary_pts);
+</pre></div>
+</li>
+<li><p>If you wish to edit the colors, just edit the <code>colors.xml</code> file under the libs &gt; <code>values</code> 
+folder</p></li>
+</ol>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+
+<pre><code>Copyright 2016 Nishant Srivastava
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
