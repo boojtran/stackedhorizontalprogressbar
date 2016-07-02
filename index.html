@@ -1,53 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <title>StackedHorizontalProgressBar by nisrulz</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>StackedHorizontalProgressBar by nisrulz</title>
   </head>
-
   <body>
-    <div id="container">
-      <div class="inner">
-
-        <header>
-          <h1>StackedHorizontalProgressBar</h1>
-          <h2>Android Library to implement stacked horizontal  progressbar</h2>
-        </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/nisrulz/stackedhorizontalprogressbar/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/nisrulz/stackedhorizontalprogressbar/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/nisrulz/stackedhorizontalprogressbar" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
-          <h1>
+    <div class="wrapper">
+      <header>
+        <h1>StackedHorizontalProgressBar</h1>
+        <p>Android Library to implement stacked horizontal  progressbar</p>
+        <p class="view"><a href="https://github.com/nisrulz/stackedhorizontalprogressbar">View the Project on GitHub <small>nisrulz/stackedhorizontalprogressbar</small></a></p>
+        <ul>
+          <li><a href="https://github.com/nisrulz/stackedhorizontalprogressbar/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/nisrulz/stackedhorizontalprogressbar/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/nisrulz/stackedhorizontalprogressbar">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
 <a id="stackedhorizontalprogressbar" class="anchor" href="#stackedhorizontalprogressbar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>StackedHorizontalProgressBar</h1>
 
-<p>This is a result of me trying to find a way to have a progressbar show two values. Hence 
-I created the StackedHorizontalProgressBar as a library project.</p>
+<h3>
+<a id="specs" class="anchor" href="#specs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Specs</h3>
 
-<h1>
-<a id="integration" class="anchor" href="#integration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Integration</h1>
+<p><a href="https://maven-badges.herokuapp.com/maven-central/com.github.nisrulz/stackedhorizontalprogressbar"><img src="https://maven-badges.herokuapp.com/maven-central/com.github.nisrulz/stackedhorizontalprogressbar/badge.svg" alt="Maven Central"></a> </p>
+
+<h3>
+<a id="featured-in" class="anchor" href="#featured-in" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Featured in</h3>
+
+<p><a href="https://android-arsenal.com/details/1/3554"><img src="https://img.shields.io/badge/Android%20Arsenal-StackedHorizontalProgressBar-green.svg?style=true" alt="Android Arsenal"></a></p>
+
+<h3>
+<a id="show-some-heart" class="anchor" href="#show-some-heart" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Show some <g-emoji alias="heart" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png">❤️</g-emoji>
+</h3>
+
+<p><a href="https://github.com/nisrulz/stackedhorizontalprogressbar"><img src="https://img.shields.io/github/stars/nisrulz/stackedhorizontalprogressbar.svg?style=social&amp;label=Star" alt="GitHub stars"></a> <a href="https://github.com/nisrulz/stackedhorizontalprogressbar/fork"><img src="https://img.shields.io/github/forks/nisrulz/stackedhorizontalprogressbar.svg?style=social&amp;label=Fork" alt="GitHub forks"></a> <a href="https://github.com/nisrulz/stackedhorizontalprogressbar"><img src="https://img.shields.io/github/watchers/nisrulz/stackedhorizontalprogressbar.svg?style=social&amp;label=Watch" alt="GitHub watchers"></a> <a href="https://github.com/nisrulz"><img src="https://img.shields.io/github/followers/nisrulz.svg?style=social&amp;label=Follow" alt="GitHub followers"></a><br>
+<a href="https://twitter.com/nisrulz"><img src="https://img.shields.io/twitter/follow/nisrulz.svg?style=social" alt="Twitter Follow"></a> </p>
+
+<p>Android library with ability to show two progress indicators in one horizontal progress bar.</p>
+
+<blockquote>
+<p>This is a result of me trying to find a way to have a progressbar show two values. Hence I created the StackedHorizontalProgressBar as a library project.</p>
+</blockquote>
+
+<h3>
+<a id="screenshot-of-sample-app" class="anchor" href="#screenshot-of-sample-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenshot of sample app</h3>
+
+<p><img src="https://github.com/nisrulz/stackedhorizontalprogressbar/blob/master/img/sc1.png" alt="Sc1"> </p>
+
+<h3>
+<a id="integration" class="anchor" href="#integration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Integration</h3>
 
 <ul>
 <li>StackedHorizontalProgressBar is available in the MavenCentral, so getting it as simple as adding it as a dependency</li>
 </ul>
 
-<div class="highlight highlight-source-groovy-gradle"><pre>compile <span class="pl-s"><span class="pl-pds">'</span>com.github.nisrulz:stackedhorizontalprogressbar:1.0.1<span class="pl-pds">'</span></span></pre></div>
+<div class="highlight highlight-source-groovy-gradle"><pre>compile <span class="pl-s"><span class="pl-pds">'</span>com.github.nisrulz:stackedhorizontalprogressbar:1.0.2<span class="pl-pds">'</span></span></pre></div>
 
-<h1>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
 
 <ol>
 <li>
@@ -67,7 +88,7 @@ I created the StackedHorizontalProgressBar as a library project.</p>
 <p>Reference in code as below</p>
 
 <div class="highlight highlight-source-java"><pre><span class="pl-k">int</span> primary_pts <span class="pl-k">=</span> <span class="pl-c1">3</span>;
-<span class="pl-k">int</span> secondary_pts <span class="pl-k">=</span><span class="pl-c1">6</span>;
+<span class="pl-k">int</span> secondary_pts <span class="pl-k">=</span> <span class="pl-c1">6</span>;
 <span class="pl-k">int</span> max <span class="pl-k">=</span> <span class="pl-c1">10</span>;
 
 <span class="pl-smi">StackedHorizontalProgressBar</span> stackedHorizontalProgressBar;
@@ -77,9 +98,35 @@ stackedHorizontalProgressBar<span class="pl-k">.</span>setProgress(primary_pts);
 stackedHorizontalProgressBar<span class="pl-k">.</span>setSecondaryProgress(secondary_pts);
 </pre></div>
 </li>
-<li><p>If you wish to edit the colors, just edit the <code>colors.xml</code> file under the libs &gt; <code>values</code> 
-folder</p></li>
+<li>
+<p>If you wish to edit the colors, just edit the <code>colors.xml</code> file under the <code>res</code> &gt; <code>values</code> 
+folder and add the below colors (modify the values as per your requirement)</p>
+
+<div class="highlight highlight-text-xml"><pre><span class="pl-c">&lt;!-- Stacked Horizontal Progressbar Colors --&gt;</span>
+&lt;<span class="pl-ent">color</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>shpbr_primary_progress<span class="pl-pds">"</span></span>&gt;#3F51B5&lt;/<span class="pl-ent">color</span>&gt;
+&lt;<span class="pl-ent">color</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>shpbr_secondary_progress<span class="pl-pds">"</span></span>&gt;#FF4081&lt;/<span class="pl-ent">color</span>&gt;</pre></div>
+</li>
 </ol>
+
+<h3>
+<a id="pull-requests" class="anchor" href="#pull-requests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pull Requests</h3>
+
+<p>I welcome and encourage all pull requests. It usually will take me within 24-48 hours to respond to any issue or request. Here are some basic rules to follow to ensure timely addition of your request:</p>
+
+<ol>
+<li>Match coding style (braces, spacing, etc.) This is best achieved using <code>CMD</code>+<code>Option</code>+<code>L</code> (Reformat code) on Mac (not sure for Windows) with Android Studio defaults.</li>
+<li>If its a feature, bugfix, or anything please only change code to what you specify.</li>
+<li>Please keep PR titles easy to read and descriptive of changes, this will make them easier to merge :)</li>
+<li>Pull requests <em>must</em> be made against <code>develop</code> branch. Any other branch (unless specified by the maintainers) will get rejected.</li>
+<li>Check for existing <a href="https://github.com/nisrulz/stackedhorizontalprogressbar/issues">issues</a> first, before filing an issue.<br>
+</li>
+<li>Have fun!</li>
+</ol>
+
+<h3>
+<a id="created--maintained-by" class="anchor" href="#created--maintained-by" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Created &amp; Maintained By</h3>
+
+<p><a href="https://github.com/nisrulz">Nishant Srivastava</a> (<a href="https://www.twitter.com/nisrulz">@nisrulz</a>)</p>
 
 <h1>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
@@ -98,15 +145,13 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 </code></pre>
-        </section>
-
-        <footer>
-          StackedHorizontalProgressBar is maintained by <a href="https://github.com/nisrulz">nisrulz</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
+      </section>
     </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/nisrulz">nisrulz</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>
